@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Catch it 😭</title>
+<style>
+body{
+  background:#1a1a40;
+  color:white;
+  text-align:center;
+  padding-top:100px;
+}
+button{
+  padding:12px 20px;
+  border-radius:20px;
+  border:none;
+  background:#ff4d6d;
+  color:white;
+  cursor:pointer;
+  position:absolute;
+}
+</style>
+</head>
+<body>
+
+<h2>Click the button… if you can 😏</h2>
+
+<button id="btn">Catch me 😭</button>
+
+<script>
+const btn = document.getElementById("btn");
+
+btn.addEventListener("mouseover", ()=>{
+  btn.style.top = Math.random()*80 + "%";
+  btn.style.left = Math.random()*80 + "%";
+});
+
+btn.addEventListener("click", ()=>{
+  window.location.href = "final.html";
+});
+</script>
+
+</body>
+  </html>
